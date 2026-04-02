@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Wedding | Arif & Nurul</title>
+
+    <!-- Meta Tags untuk SEO -->
+    <meta
+      name="description"
+      content="Undangan Pernikahan Digital Arif & Nurul - 9 April 2026"
+    />
+    <meta
+      name="keywords"
+      content="undangan pernikahan, wedding invitation, Arif, Nurul"
+    />
+    <meta property="og:title" content="The Wedding | Arif & Nurul" />
+    <meta
+      property="og:description"
+      content="Undangan Pernikahan Digital Arif Zulfahri & Nurul Ikhwani"
+    />
+    <meta property="og:image" content="img/bg/bg.jpeg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <!-- Preload Audio -->
+    <link rel="preload" href="audio/marry-your-daughter.mp3" as="audio" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Lightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+
+<!-- Lightbox JS - pastikan urutannya benar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Audio Player (Hidden) -->
+    <audio id="weddingSong" loop>
+      <source src="audio/marry-your-daughter.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="brand-text">A & N</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div
+            class="col-12 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <span class="hero-subtitle">The Wedding Of</span>
+            <h1 class="hero-title" id="nama-pengantin">
+              Arif <span>&</span> Nurul
+            </h1>
+            <div class="hero-date">09 . 04 . 2026</div>
+
+            <!-- Countdown Elegant -->
+            <div class="countdown-wrapper">
+              <div class="countdown-item">
+                <span class="countdown-number" id="days">00</span>
+                <span class="countdown-label">Hari</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Jam</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Menit</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Detik</span>
+              </div>
+            </div>
+
+            <div class="guest-welcome mt-5">
+              <i class="fas fa-envelope-open-text"></i>
+              <p class="guest-text" id="guest-display"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#info">
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Info Pasangan dengan Love di Tengah -->
+    <section class="couple-section" id="info">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <span class="section-subtitle">Pasangan Bahagia</span>
+            <h2 class="section-title">Calon Mempelai</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+
+        <div class="row align-items-center position-relative">
+          <!-- Love Icon di Tengah -->
+          <div class="love-divider">
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <!-- Pengantin Pria -->
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="couple-card">
+              <div class="couple-image-wrapper">
+                <img
+                  src="img/info/pria.png"
+                  alt="Arif"
+                  class="couple-image"
+                  style="object-position: 50% 30%"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop'
+                  "
+                />
+              </div>
+              <h3 class="couple-name">Arif Zulfahri</h3>
+              <p class="couple-parents">Putra dari Bpk. Sugino & Ibu Supiani</p>
+
+              <!-- Kata Kata -->
+              <div class="quote-wrapper">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="couple-quote">
+                  "Sederhana bukan berarti kurang, tapi memilih untuk fokus pada
+                  yang hakiki. Bersamamu, aku menemukan arti kebahagiaan
+                  sejati."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pengantin Wanita -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="couple-card">
+              <div class="couple-image-wrapper">
+                <img
+                  src="img/info/wanita.png"
+                  alt="Nurul"
+                  class="couple-image"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1494790108777-847ef6b5e4f1?w=400&h=400&fit=crop'
+                  "
+                />
+              </div>
+              <h3 class="couple-name">Nurul Ikhwani</h3>
+              <p class="couple-parents">
+                Putri dari Alm. Bpk. Herman & Ibu Juliani
+              </p>
+
+              <!-- Kata Kata -->
+              <div class="quote-wrapper">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="couple-quote">
+                  "Cinta sejati bukan tentang menemukan seseorang yang sempurna,
+                  tapi tentang melihat ketidaksempurnaan dengan mata hati yang
+                  penuh kasih."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Story dengan Frame Bulat di Tengah -->
+    <section class="story-section" id="story">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <span class="section-subtitle">Perjalanan Cinta</span>
+            <h2 class="section-title">Love Story</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <!-- Story 1 - Perkenalan -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-image">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Awal Cerita</span>
+              <h4>Perkenalan</h4>
+              <p>
+                "Benar kata mereka, tidak ada yang kebetulan di dunia ini semua
+                sudah tersusun rapi oleh sang Maha Kuasa. Sebuah percakapan
+                singkat melalui messenger menjadi awal dari segalanya."
+              </p>
+            </div>
+          </div>
+
+          <!-- Story 2 - Menjalin Hubungan -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-image">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h4>Menjalin Hubungan</h4>
+              <p>
+                "Diantara miliaran kemungkinan, semesta memilih untuk
+                mempertemukan kami dalam waktu yang tak terduga. Kami bertemu
+                pada tahun 2023. Dan tanpa perkenalan panjang, kami memilih
+                untuk menjalin hubungan bersama."
+              </p>
+            </div>
+          </div>
+
+          <!-- Story 3 - Lamaran -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-image">
+              <i class="fas fa-ring"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">September 2025</span>
+              <h4>Lamaran</h4>
+              <p>
+                "Di titik ini, kami berhenti mencari dan akhirnya memutuskan
+                untuk membangun sebuah ikatan suci dengan restu dari kedua
+                keluarga. Kami melangsungkan pertunangan pada September 2025
+                sebagai langkah serius menuju masa depan bersama."
+              </p>
+            </div>
+          </div>
+
+          <!-- Story 4 - Pernikahan -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-image">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">09 April 2026</span>
+              <h4>Pernikahan</h4>
+              <p>
+                "Percayalah, bukan karena bertemu lalu berjodoh tapi karena
+                berjodoh lah maka kami dipertemukan. Pernikahan adalah gerbang
+                menyelaraskan langkah, menyamakan mimpi dan harapan bersama.
+                Karena aku dan kamu akan menjadi kita selamanya."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Info dengan Peringatan -->
+    <section class="event-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <span class="section-subtitle">Acara</span>
+            <h2 class="section-title">Akad & Resepsi</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="zoom-in">
+            <div class="event-card">
+              <div class="event-icon">
+                <i class="fas fa-mosque"></i>
+              </div>
+              <h3>Akad Nikah</h3>
+              <div class="event-datetime">
+                <i class="far fa-calendar-alt"></i> Kamis, 9 April 2026
+              </div>
+              <div class="event-datetime">
+                <i class="far fa-clock"></i> 09.00 WIB - Selesai
+              </div>
+              <div class="event-venue">
+                <i class="fas fa-map-marker-alt"></i> Karang Anyar, Huta 3 pasar
+                1 bawah
+              </div>
+
+              <a
+                href="https://maps.app.goo.gl/nWi6FeGDpov7KEcj8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-event"
+                >Lihat Peta <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="event-card">
+              <div class="event-icon">
+                <i class="fas fa-glass-cheers"></i>
+              </div>
+              <h3>Resepsi</h3>
+              <div class="event-datetime">
+                <i class="far fa-calendar-alt"></i> Minggu, 12 April 2026
+              </div>
+              <div class="event-datetime">
+                <i class="far fa-clock"></i> 10.00 WIB - Selesai
+              </div>
+              <div class="event-venue">
+                <i class="fas fa-map-marker-alt"></i> Karang Anyar, Huta 3 pasar
+                1 bawah
+              </div>
+
+              <a
+                href="https://maps.app.goo.gl/nWi6FeGDpov7KEcj8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-event"
+                >Lihat Peta <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warning Message -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="warning-message" data-aos="fade-up">
+              <i class="fas fa-exclamation-circle"></i>
+              <div class="warning-content">
+                <h4>Penting untuk diperhatikan!</h4>
+                <p>
+                  Jika tidak ada tanda-tanda sedang dilangsungkan pernikahan,
+                  boleh jadi Anda salah alamat, atau salah tanggal. Mohon
+                  periksa kembali undangan Anda. Kami tunggu kehadiran Anda di
+                  hari bahagia kami! 🎉
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery dengan Kata-kata dan Lightbox -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <span class="section-subtitle">Momen Bahagia</span>
+            <h2 class="section-title">Pre Wedding Gallery</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+
+        <!-- Kata-kata sebelum Gallery -->
+        <div class="gallery-intro" data-aos="fade-up">
+          <div class="gallery-quote">
+            <i class="fas fa-camera-retro"></i>
+            <h3>Setiap gambar menyimpan cerita</h3>
+            <p>
+              "Dalam setiap frame tersimpan jutaan makna, seperti halnya cinta
+              yang tak pernah bisa dijelaskan dengan kata-kata."
+            </p>
+            <span class="quote-author">- Arif & Nurul</span>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <a
+              href="img/galeri/poto1.jpg"
+              data-lightbox="wedding-gallery"
+              data-title="Pre Wedding 1 - Taman"
+            >
+              <div class="gallery-item">
+                <img
+                  src="img/galeri/poto1.jpg"
+                  alt="Gallery 1"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&h=400&fit=crop'
+                  "
+                />
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a
+              href="img/galeri/poto2.jpg"
+              data-lightbox="wedding-gallery"
+              data-title="Pre Wedding 2 - Pantai"
+            >
+              <div class="gallery-item">
+                <img
+                  src="img/galeri/poto2.jpg"
+                  alt="Gallery 2"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop'
+                  "
+                />
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <a
+              href="img/galeri/poto3.jpg"
+              data-lightbox="wedding-gallery"
+              data-title="Pre Wedding 3 - Studio"
+            >
+              <div class="gallery-item">
+                <img
+                  src="img/galeri/poto3.jpg"
+                  alt="Gallery 3"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&h=400&fit=crop'
+                  "
+                />
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <a
+              href="img/galeri/poto4.jpg"
+              data-lightbox="wedding-gallery"
+              data-title="Pre Wedding 4 - Garden"
+            >
+              <div class="gallery-item">
+                <img
+                  src="img/galeri/poto4.jpg"
+                  alt="Gallery 4"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&h=400&fit=crop'
+                  "
+                />
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <a
+              href="img/galeri/poto5.jpg"
+              data-lightbox="wedding-gallery"
+              data-title="Pre Wedding 5 - City"
+            >
+              <div class="gallery-item">
+                <img
+                  src="img/galeri/poto5.jpg"
+                  alt="Gallery 5"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=400&fit=crop'
+                  "
+                />
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <a
+              href="img/galeri/poto6.jpg"
+              data-lightbox="wedding-gallery"
+              data-title="Pre Wedding 6 - Classic"
+            >
+              <div class="gallery-item">
+                <img
+                  src="img/galeri/poto6.jpg"
+                  alt="Gallery 6"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1510076857177-7470076e4098?w=600&h=400&fit=crop'
+                  "
+                />
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section" id="rsvp">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <span class="section-subtitle">Konfirmasi</span>
+            <h2 class="section-title">RSVP</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="rsvp-card">
+              <div class="rsvp-header">
+                <h4>Mohon Konfirmasi Kehadiran</h4>
+                <p>Isi form di bawah ini untuk konfirmasi kehadiran Anda</p>
+              </div>
+
+              <form id="rsvpForm" class="rsvp-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Nama Lengkap"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="guests"
+                        placeholder="Jumlah Tamu"
+                        min="1"
+                        max="5"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="attendance" class="visually-hidden"
+                        >Konfirmasi Kehadiran</label
+                      >
+                      <select class="form-control" id="attendance" required>
+                        <option value="" disabled selected>
+                          Konfirmasi Kehadiran
+                        </option>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Tidak Hadir">Tidak Hadir</option>
+                        <option value="Ragu">Masih Ragu</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="4"
+                        placeholder="Ucapan & Doa"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn-submit">
+                      <span>Kirim Konfirmasi</span>
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" id="messages">
+          <!-- Ucapan akan ditampilkan di sini -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section class="gift-section" id="gifts">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <span class="section-subtitle">Wedding Gifts</span>
+            <h2 class="section-title">Kirim Hadiah</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="gift-card">
+              <div class="gift-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <h4>Transfer Bank</h4>
+              <p class="bank-name">Bank BRI</p>
+              <p class="account-number">0113 0114 8709 509</p>
+              <p class="account-name">a.n NURUL IKHWANI</p>
+              <button
+                class="btn-copy"
+                onclick="copyToClipboard('011301148709509')"
+              >
+                <i class="far fa-copy"></i> Salin Nomor
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="gift-card">
+              <div class="gift-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <h4>Transfer Bank</h4>
+              <p class="bank-name">Bank Mandiri</p>
+              <p class="account-number">1070 0213 4345 6</p>
+              <p class="account-name">a.n NURUL IKHWANI</p>
+              <button
+                class="btn-copy"
+                onclick="copyToClipboard('1070021343456')"
+              >
+                <i class="far fa-copy"></i> Salin Nomor
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="footer-flower">
+              <i class="fas fa-asterisk"></i>
+              <i class="fas fa-asterisk"></i>
+              <i class="fas fa-asterisk"></i>
+            </div>
+            <p class="footer-quote">
+              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+              untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
+              dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+              kasih dan sayang."
+            </p>
+            <p class="footer-quote-source">(QS. Ar-Rum: 21)</p>
+
+            <div class="footer-copyright">
+              © 2026 | Arif & Nurul's Wedding. All rights reserved.
+<br>
+<small>
+    Web Design & Development by <strong>Fadlan F F</strong>
+    <a href="https://www.instagram.com/fdlann.26/" target="_blank" rel="noopener noreferrer" style="color: #D4A373; margin-left: 8px;">
+        <i class="fab fa-instagram"></i>
+    </a>
+</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
