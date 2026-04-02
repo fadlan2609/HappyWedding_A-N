@@ -112,7 +112,7 @@ body {
     justify-content: center;
     text-align: center;
     background: linear-gradient(135deg, rgba(62, 42, 31, 0.7) 0%, rgba(62, 42, 31, 0.8) 100%),
-        url('../img/bg/bg1.PNG') center/cover !important;
+        url('../img/bg/bg1.png') center/cover !important;
     background-attachment: fixed !important;
     filter: grayscale(100%);
 }
