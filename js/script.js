@@ -294,10 +294,10 @@ function displayGuestName() {
 }
 
 // ========================================
-// Countdown timer (9 April 2026)
+// Countdown timer (12 April 2026)
 // ========================================
 function updateCountdown() {
-    const weddingDate = new Date('April 9, 2026 09:00:00').getTime();
+    const weddingDate = new Date('April 12, 2026 10:00:00').getTime();
     
     function calculateCountdown() {
         const now = new Date().getTime();
